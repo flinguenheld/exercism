@@ -1,0 +1,14 @@
+import sys
+
+
+def square(number):
+    if number < 1 or number > 64:
+        raise ValueError("square must be between 1 and 64")
+    return 1 << (number - 1)
+
+
+def total():
+    return pow(2, 64) - 1
+
+# 18446744073709551615
+# 9223372036854775808
